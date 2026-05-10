@@ -1,0 +1,145 @@
+.experts-page {
+  padding: 30px;
+  background: #f6f8fb;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  color: #1f2937;
+}
+.experts-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.experts-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.experts-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.experts-search,
+.experts-select {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  outline: none;
+  width: 220px;
+  font-size: 14px;
+}
+
+.experts-search:focus,
+.experts-select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.experts-bookings-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.experts-bookings-btn:hover {
+  background: #2563eb;
+}
+
+.experts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
+  gap: 20px;
+}
+
+.experts-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  height: 150px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.experts-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border-color: #3b82f6;
+}
+
+.experts-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experts-card h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #111827;
+}
+
+.experts-rating {
+  font-size: 13px;
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.experts-category {
+  margin-top: 8px;
+  color: #3b82f6;
+  font-size: 14px;
+}
+
+.experts-meta {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.experts-view-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #10b981;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.experts-view-btn:hover {
+  background: #059669;
+}
+
+.experts-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.experts-pagination button {
+  padding: 8px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+.experts-pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

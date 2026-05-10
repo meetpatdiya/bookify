@@ -1,0 +1,140 @@
+.mybook-page {
+  padding: 30px;
+  background: #f6f8fb;
+  min-height: 100vh;
+  font-family: Inter, sans-serif;
+  color: #111827;
+}
+
+.mybook-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.mybook-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.mybook-search {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mybook-input {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  width: 260px;
+  outline: none;
+  background: white;
+}
+
+.mybook-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.mybook-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.mybook-btn:hover {
+  background: #2563eb;
+}
+
+.mybook-empty {
+  margin-top: 30px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.mybook-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.mybook-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 18px;
+  transition: 0.2s ease;
+}
+
+.mybook-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  border-color: #3b82f6;
+}
+
+.mybook-card-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mybook-status {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.mybook-info {
+  margin-top: 10px;
+}
+
+.mybook-info p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+.mybook-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.mybook-confirm {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #10b981;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.mybook-confirm:hover {
+  background: #059669;
+}
+
+.mybook-complete {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 10px;
+  background: #f59e0b;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.mybook-complete:hover {
+  background: #d97706;
+}
